@@ -16,7 +16,7 @@ public class CreateUsers {
 	public static void createAdminSys() {
 		
 		User user = new User();
-		user.setUserName("adminSys");
+		user.setUserName("adminsys");
 		user.setUserPassword("adminsys");
 		
 		user.setFirstName("System Admin");
