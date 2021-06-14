@@ -11,8 +11,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
-import lebah.db.entity.Role;
 import lebah.db.entity.User;
 
 @Embeddable
