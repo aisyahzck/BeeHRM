@@ -1,0 +1,3 @@
+<div id="div_main">
+	#parse("apps/attendance/attendance.vm")
+</div>

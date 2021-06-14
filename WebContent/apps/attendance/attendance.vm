@@ -1,0 +1,32 @@
+<script type="text/javascript"> 
+
+
+function display_ct() {
+var x = new Date()
+document.getElementById('MyClockDisplay').textContent = x;
+setTimeout(display_ct, 1000);
+ }
+ display_ct();
+</script>
+
+
+<div id="MyClockDisplay" class="clock" onload="display_ct()" style= "font-size:35px; letter-spacing:1px; -webkit-transition:0.5s; text-align: center;">  
+</div>
+
+<div style= "font-size:20px; text-align: center;">
+<h1> Hello $!userData.firstName $!userData.lastName! </h1>
+#if ( $userData.avatarImageFileName && $userData.avatarImageFileName != "" )
+      <img style="border-radius:50%;width:200px" src="../download?filename=$!userData.avatarImageFileName" />
+    #else
+      <img style="border-radius:50%;width:200px" src="$util.profilePic.imgSrc" />
+    #end
+</div> 
+
+ <div id= "button" style= "text-align: center; padding-top: 30px;">
+   <button type="button" class="btn btn-primary" onclick=""><i class="fa fa-plus" aria-hidden="true"></i> Clock In </button>
+  <button type="button" class="btn btn-primary" ><i class="fa fa-plus" aria-hidden="true"></i> Clock Out </button>
+
+</div>
+
+ 	
+    
